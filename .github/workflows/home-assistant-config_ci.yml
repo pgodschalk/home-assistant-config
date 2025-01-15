@@ -1,0 +1,19 @@
+---
+name: Home Assistant Config
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  home-assistant-config:
+    name: Trigger private-infra CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: pgodschalk/private-infra
+          event-type: home-assistant-config
