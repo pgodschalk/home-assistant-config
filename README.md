@@ -162,7 +162,7 @@ Project Link: [https://github.com/pgodschalk/home-assistant-config](https://gith
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/patrick-godschalk
 [product-screenshot]: images/screenshot.gif
-[bash]: https://img.shields.io/badge/gnubash-4EAA25?style=for-the-badge&logo=c%2B%2B&logoColor=white
+[bash]: https://img.shields.io/badge/gnubash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white
 [bash-url]: https://www.gnu.org/software/bash/
-[yaml]: https://img.shields.io/badge/yaml-CB171E?style=for-the-badge&logo=c%2B%2B&logoColor=white
+[yaml]: https://img.shields.io/badge/yaml-CB171E?style=for-the-badge&logo=yaml&logoColor=white
 [yaml-url]: https://yaml.org
