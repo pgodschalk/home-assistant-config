@@ -1,0 +1,27 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+http:
+  use_x_forwarded_for: true
+  trusted_proxies: 127.0.0.1
+
+homekit:
+  - name: HA_Bridge
+    port: 21063
+    advertise_ip: "192.168.1.16"
+
+command_line:
+  - switch:
+      command_on: bash /config/shell/desktop_wake.sh
+      command_off: bash /config/shell/desktop_sleep.sh
+      command_state: bash /config/shell/desktop_state.sh
+      value_template: "{{ value == 'online' }}"
+      name: "Patrick's Desktop"
