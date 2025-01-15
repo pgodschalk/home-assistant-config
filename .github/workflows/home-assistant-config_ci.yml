@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy
-        uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@b3490a0b7ae10c144a3ca4d2471e14a40cb7f50c
         with:
           token: ${{ secrets.PAT }}
           repository: pgodschalk/private-infra
